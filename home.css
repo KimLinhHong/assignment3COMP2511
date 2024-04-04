@@ -1,0 +1,169 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style:none;
+}
+
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 8%;
+    background: #536265;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:100;
+
+}
+
+.logo{
+    font-size: 120%;
+    color: #FFFEFE;
+    font-weight: 600;
+    transition: 0,3s ease;
+    text-decoration: none;
+}
+
+.logo:hover{
+    color: black;
+    text-shadow: 0 0 25px black,
+                 0 0 50px black;
+    transform: scale(1.1);
+}
+
+span{
+    color:black;
+}
+
+.menu{
+    display: flex;
+    flex-direction: right;
+}
+
+.menu a{
+    font-size: 100%;
+    color:white;
+    font-weight: 500;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.menu a:hover,
+.menu a.homepage {
+    color:black;
+    border-bottom: 3px solid black;
+} 
+
+
+.home a:hover {
+    background-color: burlywood;
+    box-shadow: 0 0 25px burlywood;
+}
+
+.home{
+    background-color: #adbabc;
+    display:flex;
+    align-items: center;
+    gap: 5em;
+    padding: 20px 8% 0;
+}
+
+.home-content p{
+ font-size: medium;
+}
+
+.home a {
+    background: white;
+    color:#536265;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.about{
+    background: #536265;
+    color: white;
+}
+
+#about-content p{
+    font-size: medium;;
+}
+
+.about a {
+    background: white;
+    color:#536265;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.about a:hover {
+    background-color: burlywood;
+    box-shadow: 0 0 25px burlywood;
+}
+
+
+form{
+    font-size: medium;;
+}
+
+
+
+input [type="submit"]:hover {
+    background-color: burlywood;
+    box-shadow: 0 0 25px burlywood;
+}
+
+.form-contact{
+    background: #d8abab;
+}
+
+form{
+    
+    text-align: center;
+    max-width: 50em;
+    margin: 1rem auto;
+}
+
+.input-box{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.input-box input,
+.input-box textarea {
+    width:100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color:black;
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+/*MEDIUM DEVICE*/
+/*@media screen and (min-width:750px){
+
+}*/
+
+
+/*LARGE DEVICE*/
+/*@media screen and (min-width:950px) {
+    body{
+        width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}*/
