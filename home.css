@@ -66,11 +66,17 @@ span{
 }
 
 .home{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
     background-color: #adbabc;
     display:flex;
     align-items: center;
     gap: 5em;
-    padding: 20px 8% 0;
+    /*padding: 20px 8% 0;*/
+}
+
+.home-content{
+    grid-column:1/4;
 }
 
 .home-content p{
@@ -91,10 +97,12 @@ span{
 .about{
     background: #536265;
     color: white;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
 }
 
 #about-content p{
-    font-size: medium;;
+    font-size: medium;
 }
 
 .about a {
@@ -106,6 +114,7 @@ span{
     letter-spacing: 1px;
     font-weight: 600;
     transition: 0.3s ease;
+
 }
 
 .about a:hover {
@@ -164,10 +173,10 @@ footer{
 
 
 /*LARGE DEVICE*/
-/*@media screen and (min-width:950px) {
+@media screen and (min-width:1200px) {
     body{
-        width: 950px;
-        margin-left: auto;
+        width: 1200px;
+        margin-left:auto;
         margin-right: auto;
     }
-}*/
+}
